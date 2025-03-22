@@ -1,7 +1,17 @@
 :root {
     --color-primary: #FF5400;
 }
-body, h1, h2, h3, p, ul, li, a, input, button {
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+input,
+button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,11 +84,13 @@ nav {
 
 /* Responsive Styling */
 .menu-checkbox {
-    display: none; /* Hide the checkbox */
+    display: none;
+    /* Hide the checkbox */
 }
 
 .menu-toggle-label {
-    display: none; /* Hide the toggle label by default */
+    display: none;
+    /* Hide the toggle label by default */
     font-size: 1.5rem;
     cursor: pointer;
     background: none;
@@ -88,10 +100,13 @@ nav {
 /* Smaller screen styles */
 @media (max-width: 768px) {
     .nav-list ul {
-        display: none; /* Hide the menu by default */
-        flex-direction: column; /* Stack items vertically */
+        display: none;
+        /* Hide the menu by default */
+        flex-direction: column;
+        /* Stack items vertically */
         position: absolute;
-        top: 48px; /* Position below the nav bar */
+        top: 48px;
+        /* Position below the nav bar */
         right: 0;
         background-color: white;
         width: 100%;
@@ -105,19 +120,24 @@ nav {
     }
 
     .menu-toggle-label {
-        display: block; /* Show the toggle button */
+        display: block;
+        /* Show the toggle button */
         font-size: 1.5rem;
         cursor: pointer;
         background: none;
         border: none;
-        position: absolute; /* Position the toggle button */
-        right: 20px; /* Align it to the right */
-        top: 12px; /* Vertically center it */
+        position: absolute;
+        /* Position the toggle button */
+        right: 20px;
+        /* Align it to the right */
+        top: 12px;
+        /* Vertically center it */
     }
 
     /* Show menu when the checkbox is checked */
-    .menu-checkbox:checked ~ .nav-list ul {
-        display: flex; /* Show the menu */
+    .menu-checkbox:checked~.nav-list ul {
+        display: flex;
+        /* Show the menu */
     }
 }
 
@@ -142,13 +162,15 @@ section p {
 }
 
 .explore-banner {
-    background-image: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(105, 93, 93, 0) 100%), /* Black gradient overlay */
-        url(/Images/Group\ 13\ \(1\)\ \(1\).png); /* Background image */
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(105, 93, 93, 0) 100%),
+        /* Black gradient overlay */
+        url(Images/Group-13.png);
+    /* Background image */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     border-radius: 10px;
     height: 500px;
     width: 100%;
@@ -161,7 +183,8 @@ section p {
     padding: 20px;
 }
 
-.banner-txt h1,.banner-txt p{
+.banner-txt h1,
+.banner-txt p {
     color: #ddd;
 }
 
@@ -170,6 +193,7 @@ section p {
     gap: 10px;
     margin-top: 20px;
 }
+
 .btn-primary {
     display: flex;
     align-items: center;
@@ -210,14 +234,18 @@ section p {
     gap: 20px;
     padding: 40px 20px;
     padding: 50px 20px;
-    gap: 20px; /* Adds space between the text and the image */
+    gap: 20px;
+    /* Adds space between the text and the image */
     max-width: 1200px;
-    margin: 0 auto; /* Centers the section horizontally */
+    margin: 0 auto;
+    /* Centers the section horizontally */
 }
+
 .destination {
     text-align: center;
     padding: 20px;
 }
+
 .tours-txt {
     flex: 1;
     text-align: left;
@@ -232,7 +260,9 @@ section p {
 }
 
 .destination-txt p {
-    font-size: 1.2rem;}
+    font-size: 1.2rem;
+}
+
 .tours-txt p {
     font-size: 1rem;
     line-height: 1.6;
@@ -242,7 +272,8 @@ section p {
 
 .tours-txt ul {
     list-style-type: disc;
-    padding-left: 20px; /* Indent bullet points */
+    padding-left: 20px;
+    /* Indent bullet points */
     margin-bottom: 20px;
 }
 
@@ -278,18 +309,22 @@ section p {
 .tours-img img {
     max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     #Tours {
-        flex-direction: column; /* Stack text and image vertically */
-        text-align: center; /* Center content for smaller screens */
+        flex-direction: column;
+        /* Stack text and image vertically */
+        text-align: center;
+        /* Center content for smaller screens */
     }
 
     .tours-txt {
-        text-align: left; /* Ensure text stays aligned to the left */
+        text-align: left;
+        /* Ensure text stays aligned to the left */
     }
 
     .tours-img {
@@ -297,7 +332,8 @@ section p {
     }
 
     .tours-img img {
-        width: 90%; /* Adjust image size for smaller screens */
+        width: 90%;
+        /* Adjust image size for smaller screens */
     }
 }
 
@@ -321,7 +357,6 @@ section p {
 
 .destination-item {
     text-align: center;
-     position: relative;
     position: relative;
 }
 
@@ -338,35 +373,45 @@ section p {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a shadow for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    /* Add a shadow for better contrast */
     margin: 0;
 }
+
 #why-choose-us {
     text-align: center;
 }
+
 @media (max-width: 600px) {
     .destination-img {
-        gap: 30px; /* Increase spacing between rows */
+        gap: 30px;
+        /* Increase spacing between rows */
     }
 
-#why-choose-us .txt h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
-}
+    #why-choose-us .txt h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
     .img-set {
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center the images */
+        flex-direction: column;
+        /* Stack images vertically */
+        align-items: center;
+        /* Center the images */
     }
 
-#why-choose-us .txt p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 30px;
-}
+    #why-choose-us .txt p {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
     .destination-item {
-        max-width: 80%; /* Set a max-width of 80% */
-        margin: 0 auto; /* Center the item horizontally */
+        max-width: 80%;
+        /* Set a max-width of 80% */
+        margin: 0 auto;
+        /* Center the item horizontally */
     }
 
     .destination-item img {
@@ -376,9 +421,11 @@ section p {
     }
 
     .destination-item h2 {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 1.2rem;
+        /* Adjust font size for smaller screens */
     }
 }
+
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -396,21 +443,26 @@ section p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.container>.bnr-3{
-margin-left: 100%;
-background-color: #E94444(10%) ;
-}
-.bnr-1 {
-    background-color: rgba(251, 181, 99, 0.2); /* 20% opacity */
-  }
-  
-  .bnr-2 {
-    background-color: rgba(41, 206, 246, 0.2); /* 20% opacity */
-  }
-  
-.container > .bnr-3 {
+
+.container>.bnr-3 {
     margin-left: 100%;
-    background-color: rgba(233, 68, 68, 0.1); /* 10% opacity */
+    background-color: #E94444(10%);
+}
+
+.bnr-1 {
+    background-color: rgba(251, 181, 99, 0.2);
+    /* 20% opacity */
+}
+
+.bnr-2 {
+    background-color: rgba(41, 206, 246, 0.2);
+    /* 20% opacity */
+}
+
+.container>.bnr-3 {
+    margin-left: 100%;
+    background-color: rgba(233, 68, 68, 0.1);
+    /* 10% opacity */
 }
 
 .bnr:hover {
@@ -434,6 +486,7 @@ background-color: #E94444(10%) ;
     font-size: 1rem;
     color: #555;
 }
+
 #Deals-Discounts {
     margin-top: 50px;
     text-align: center;
@@ -449,20 +502,26 @@ background-color: #E94444(10%) ;
 }
 
 .deals-banner img {
-    width: 100%; /* Image takes 100% of the width */
-    border-radius: 10px; /* Keep the rounded corners */
+    width: 100%;
+    /* Image takes 100% of the width */
+    border-radius: 10px;
+    /* Keep the rounded corners */
 }
 
 .deals-txt {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translateY(-50%); /* Center the text vertically */
-    width: 50%; /* Text takes up 50% of the width */
-    background: rgba(243, 241, 241, 0.6); /* Semi-transparent black background */
+    transform: translateY(-50%);
+    /* Center the text vertically */
+    width: 50%;
+    /* Text takes up 50% of the width */
+    background: rgba(243, 241, 241, 0.6);
+    /* Semi-transparent black background */
     color: #2c2a2a;
     padding: 20px;
-    border-radius: 10px; /* Round the right corners only */
+    border-radius: 10px;
+    /* Round the right corners only */
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin-right: 50px;
@@ -501,17 +560,21 @@ background-color: #E94444(10%) ;
     margin-top: 10px;
 }
 
-.deals-banner2>.deals-txt{
+.deals-banner2>.deals-txt {
     position: absolute;
     top: 50%;
     left: 0;
     right: 0;
-    transform: translateY(-50%); /* Center the text vertically */
-    width: 50%; /* Text takes up 50% of the width */
-    background: rgba(243, 241, 241, 0.6); /* Semi-transparent black background */
+    transform: translateY(-50%);
+    /* Center the text vertically */
+    width: 50%;
+    /* Text takes up 50% of the width */
+    background: rgba(243, 241, 241, 0.6);
+    /* Semi-transparent black background */
     color: #2c2a2a;
     padding: 20px;
-    border-radius: 10px; /* Round the right corners only */
+    border-radius: 10px;
+    /* Round the right corners only */
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin-left: 50px;
@@ -574,6 +637,7 @@ background-color: #E94444(10%) ;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 /* Newsletter Section */
 .newsletter-section {
     padding: 60px 20px;
@@ -613,7 +677,7 @@ background-color: #E94444(10%) ;
     font-size: 1rem;
     margin-bottom: 30px;
     padding: 10px;
-    border-bottom: 1px solid rgb(19, 19, 24,0.1);
+    border-bottom: 1px solid rgb(19, 19, 24, 0.1);
 
 }
 
@@ -658,9 +722,12 @@ background-color: #E94444(10%) ;
 
 .banner-overlay {
     position: absolute;
-    bottom: 20%; /* Adjust for the vertical positioning */
-    right: 10%;  /* Adjust for the horizontal positioning */
-    transform: rotate(-19deg); /* Apply a 45-degree rotation */
+    bottom: 20%;
+    /* Adjust for the vertical positioning */
+    right: 10%;
+    /* Adjust for the horizontal positioning */
+    transform: rotate(-19deg);
+    /* Apply a 45-degree rotation */
     background-color: #ff5400;
     color: #fff;
     text-align: center;
@@ -679,25 +746,29 @@ background-color: #E94444(10%) ;
     font-weight: bold;
     color: #ddd;
 }
-footer{
-    background-color: rgb(19, 19, 24, 0.05) ;
+
+footer {
+    background-color: rgb(19, 19, 24, 0.05);
 }
-.footer{
+
+.footer {
 
     max-width: 800px;
     margin: auto;
     padding: 50px;
 
 }
-.footer-logo{
+
+.footer-logo {
     justify-content: center;
 }
+
 .icon-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    border-bottom: 2px solid rgb(19, 19, 24,.10) ;
+    border-bottom: 2px solid rgb(19, 19, 24, .10);
 }
 
 .icon-footer ul {
@@ -708,19 +779,26 @@ footer{
 }
 
 .icon-footer li {
-    margin: 0 10px; /* Adjust the spacing between icons */
+    margin: 0 10px;
+    /* Adjust the spacing between icons */
 }
 
 .icon-footer svg {
-    width: 50px; /* Icon size */
-    height: 50px; /* Icon size */
+    width: 50px;
+    /* Icon size */
+    height: 50px;
+    /* Icon size */
     transition: transform 0.3s ease;
 }
 
 .icon-footer svg:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
 }
-.logo,.footer-txt,.icon-footer{
+
+.logo,
+.footer-txt,
+.icon-footer {
     margin-bottom: 20px;
 }
 
@@ -730,7 +808,8 @@ footer{
         flex-direction: column;
     }
 
-    .news-txt, .news-banner {
+    .news-txt,
+    .news-banner {
         max-width: 100%;
         margin-bottom: 20px;
     }
@@ -743,7 +822,9 @@ footer{
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .video-txt, .video-container {
+
+    .video-txt,
+    .video-container {
         max-width: 100%;
         text-align: center;
     }
